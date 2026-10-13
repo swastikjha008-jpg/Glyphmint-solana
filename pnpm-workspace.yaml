@@ -1,0 +1,11 @@
+# The lockfile intentionally includes the versions selected for this app.
+# Disable pnpm v11's optional one-day release-age hold for this workspace.
+minimumReleaseAge: 0
+
+# These are optional native Node.js optimizations. The browser client does not
+# depend on them, so keep their lifecycle scripts disabled and non-fatal.
+strictDepBuilds: false
+allowBuilds:
+  bigint-buffer: false
+  bufferutil: false
+  utf-8-validate: false
